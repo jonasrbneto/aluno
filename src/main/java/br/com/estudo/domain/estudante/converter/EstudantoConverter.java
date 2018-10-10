@@ -3,7 +3,10 @@ package br.com.estudo.domain.estudante.converter;
 import br.com.estudo.domain.estudante.vo.EstudanteVO;
 import br.com.estudo.entity.Estudante;
 import org.springframework.core.convert.converter.Converter;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
+@Component
 public class EstudantoConverter implements Converter<EstudanteVO, Estudante> {
 
     @Override

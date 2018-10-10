@@ -30,15 +30,41 @@ public class EstudanteVO {
         return nome;
     }
 
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
     public LocalDate getDtNascimento() {
         return dtNascimento;
+    }
+
+    public void setDtNascimento(LocalDate dtNascimento) {
+        this.dtNascimento = dtNascimento;
     }
 
     public String getCurso() {
         return curso;
     }
 
+    public void setCurso(String curso) {
+        this.curso = curso;
+    }
+
     public String getPredio() {
         return predio;
+    }
+
+    public void setPredio(String predio) {
+        this.predio = predio;
+    }
+
+    @Override
+    public String toString() {
+        return "EstudanteVO{" +
+                "nome='" + nome + '\'' +
+                ", dtNascimento=" + dtNascimento +
+                ", curso='" + curso + '\'' +
+                ", predio='" + predio + '\'' +
+                '}';
     }
 }

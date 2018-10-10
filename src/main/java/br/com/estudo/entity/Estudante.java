@@ -11,7 +11,7 @@ import java.time.LocalDate;
 public class Estudante {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @Column(name = "nome")
@@ -26,8 +26,7 @@ public class Estudante {
     @Column(name = "predio")
     private String predio;
 
-    @Deprecated
-    public Estudante() {
+    private Estudante() {
     }
 
     public Estudante(String nome, LocalDate dtNascimento, String curso, String predio) {
