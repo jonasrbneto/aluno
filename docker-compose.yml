@@ -1,0 +1,11 @@
+services:
+  db:
+    image: mysql:5.7
+    volumes:
+    - db_data:/var/lib/mysql
+    restart: always
+    enviroment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+
